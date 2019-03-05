@@ -1,0 +1,6 @@
+echo "Réalisez un script qui affiche seulement le login,"
+echo "le UID et le Path de chaques entrée du fichier /etc/passwd"
+echo
+echo "cat /etc/passwd | awk -F ':' '{ print $1,$3,$7 }'"
+echo
+cat /etc/passwd | awk -F ':' '{ print $1,$3,$7 }'

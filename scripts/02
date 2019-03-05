@@ -1,0 +1,13 @@
+echo "Which user would you like to delete?"
+
+read username
+
+if id -u "$username" 2>/dev/null 1>/dev/null
+then
+        pid=`ps -aux | grep "username" | grep 'bash$' | awk '{print $2}'`
+        sudo kill -9 $pid 2>/dev/null 1>/dev/null
+        sudo deluser $username 2>/dev/null 1>/dev/null
+        echo "User has been removed."
+else
+        echo "User does not exist"
+fi

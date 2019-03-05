@@ -1,0 +1,84 @@
+addCommitPush ()
+{
+    for FILE in "$@"
+    do
+        git add $FILE
+    done
+    echo "Type your commit message: "
+    read commit
+
+    git commit -m "$commit"
+
+    echo "Which origin and branch? (default: origin master)"
+    read originbranch
+
+    if [ -z "$originbranch" ]
+    then
+        originbranch="origin master"
+    fi
+
+    git pull $originbranch
+    git push $originbranch
+
+    echo "Done!"
+}
+
+if [ -z "$*" ]
+then
+    echo "Welcome to the git automator!"
+    PS3='What would you like to do?'
+    options=("Git Add" "Git Commit" "Git Push" "Git Pull" "Quit")
+    select opt in "${options[@]}"
+    do
+        case $opt in
+            "Git Add")
+                echo "Voici les fichiers du dossier :"
+                git status -s
+                echo "Quels fichiers voulez-vous add ?"
+                read toadd
+                git add $toadd
+                echo "DONE"
+                ;;
+            "Git Commit")
+                echo "Quel est votre message de commit ?"
+                read commit
+                git commit -m "$commit"
+                ;;
+            "Git Push")
+                echo "Quel origine et branche ? Laissez vide pour origin master"
+
+                read originbranch
+
+                if [ -z "$originbranch" ]
+                then
+                     originbranch="origin master"
+                fi
+
+                git pull $originbranch
+                git push $originbranch
+
+                echo "Done!"
+                ;;
+            "Git Pull")
+                echo "Which origin and branch ? leave blank by default"
+
+                read originbranch
+
+                if [ -z "$originbranch" ]
+                then
+                     originbranch="origin master"
+                fi
+
+                git pull $originbranch
+                ;;
+            "Quit")
+                break
+                ;;
+            *) echo "Option $REPLY inexistante."
+            ;;
+        esac
+    done
+else
+    addCommitPush "$@"
+fi
+
