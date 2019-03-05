@@ -1,0 +1,3 @@
+sudo hostname NOUVEAUNOM
+# 2. Quelle commande permet de renommer votre système ?
+# pour verifier le nom : commande hostname

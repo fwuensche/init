@@ -1,0 +1,11 @@
+En Graphique :
+- Je me log out
+- j'entre mon nouveau login
+- J'entre mon nouveau mot de passe
+- Je clique sur Log in
+
+En SSH :
+j'ouvre un terminal et je met la commande :
+- ssh nouveauusername@localhost
+
+# Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session graphique et en session ssh)

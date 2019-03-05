@@ -1,0 +1,2 @@
+sudo service ssh status
+# 5. Donnez une commande qui détermine l’état du service SSH

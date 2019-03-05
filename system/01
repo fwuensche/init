@@ -1,0 +1,5 @@
+
+echo "1. Dans quel fichier se trouve la version installée de votre Debian ?"
+echo
+echo "La version se trouve dans etc/debian_version"
+echo "Dans ma VM, c'est la version 9.7 de debian"
