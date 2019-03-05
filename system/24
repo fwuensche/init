@@ -1,3 +1,5 @@
+echo "Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ?"
+echo
+echo "apt list --installed"
+echo
 apt list --installed
-
-# 24. Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ?

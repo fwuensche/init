@@ -1,2 +1,6 @@
-# 4. Quelle commande donne le temps depuis lequel votre système à été démarré la dernière fois ?
+
+echo "Quelle commande donne le temps depuis lequel votre système à été démarré la dernière fois ?"
+echo
+echo "uptime"
+echo
 uptime

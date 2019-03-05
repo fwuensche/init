@@ -1,2 +1,11 @@
-/etc/init.d/ssh stop
-# 18. Donnez une commande qui permet d’arrêter le service ssh
+echo "Donnez une commande qui permet d’arrêter le service ssh"
+echo
+echo "/etc/init.d/ssh stop"
+echo
+read -n1 -p "Would you like to execute this command? [y,n]" doit
+echo
+case $doit in
+  y|Y) /etc/init.d/ssh stop ;;
+  n|N) echo "Ok, aborting..." ;;
+  *) echo "Ok, aborting..." ;;
+esac

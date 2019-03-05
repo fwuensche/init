@@ -1,7 +1,6 @@
-
 commit:
 	git add .
-	git commit -m 'Just another commit'
+	git commit -m 'Automated commit'
 
 push:
 	git push github master

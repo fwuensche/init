@@ -1,2 +1,5 @@
-df -h
-# 10. Quelle commande permet de lister les tables de partitions des disques ?
+echo "Quelle commande permet de lister les tables de partitions des disques ?"
+echo
+echo "sudo fdisk -l"
+echo
+sudo fdisk -l

@@ -1,3 +1,13 @@
-sudo hostname NOUVEAUNOM
-# 2. Quelle commande permet de renommer votre système ?
-# pour verifier le nom : commande hostname
+
+echo "Quelle commande permet de renommer votre système ?"
+echo
+echo "sudo hostname flavinho"
+echo
+
+read -n1 -p "Would you like to execute the command? [y,n]" doit
+echo
+case $doit in
+  y|Y) sudo hostname flavinho ;;
+  n|N) echo "Ok, aborting..." ;;
+  *) echo "Ok, aborting..." ;;
+esac

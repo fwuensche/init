@@ -1,2 +1,6 @@
+
+echo "Donnez une commande pour redémarrer le service SSH"
+echo
+echo "sudo /etc/init.d/ssh restart"
+echo
 sudo /etc/init.d/ssh restart
-# 6. Donnez une commande pour redémarrer le service SSH

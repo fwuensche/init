@@ -1,3 +1,5 @@
+echo "Listez tout les utilisateurs réels de la machine"
+echo
+echo "cat /etc/passwd | grep '/home' | awk -F ':' '{ print $1 }'"
+echo
 cat /etc/passwd | grep '/home' | awk -F ':' '{ print $1 }'
-
-# 21. Listez tout les utilisateurs réels de la machine

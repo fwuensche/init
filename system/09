@@ -1,2 +1,6 @@
+
+echo "Quelle commande permet de savoir quelles personnes sont connectées sur le système ?"
+echo
+echo "who"
+echo
 who
-# 9. Quelle commande permet de savoir quelles personnes sont connectées sur le système ?

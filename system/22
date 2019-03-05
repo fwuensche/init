@@ -1,2 +1,11 @@
-sudo adduser NAME
-# 22. Quelle commande permet d’ajouter un utilisateur local supplémentaire ?
+echo "Quelle commande permet d’ajouter un utilisateur local supplémentaire ?"
+echo
+echo "sudo adduser flavinho"
+echo
+read -n1 -p "Would you like to execute this command? [y,n]" doit
+echo
+case $doit in
+  y|Y) sudo adduser flavinho ;;
+  n|N) echo "Ok, aborting..." ;;
+  *) echo "Ok, aborting..." ;;
+esac

@@ -1,3 +1,5 @@
+echo "Listez tout les utilisateurs existants sur la machine"
+echo
+echo "cat /etc/passwd | awk -F ':' '{ print $1 }'"
+echo
 cat /etc/passwd | awk -F ':' '{ print $1 }'
-
-# 20. Listez tout les utilisateurs existants sur la machine

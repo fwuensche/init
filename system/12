@@ -1,3 +1,6 @@
+echo "Déterminez la taille exacte de chaque dossier de /var d’une"
+echo "manière humainement compréhensible suivi du chemin de celui-ci."
+echo
+echo "sudo du -sh /var/*/"
+echo
 sudo du -sh /var/*/
-
-# 12. Déterminez la taille exacte de chaque dossier de /var d’une manière humainement compréhensible suivi du chemin de celui-ci.

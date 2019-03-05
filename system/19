@@ -1,14 +1,6 @@
-cron
-dbus
-irqbalance
-kmod
-networking
-procps
-rsync
-rsyslog
-sudo
-udev
-
-#ca sappelle un daemon
-# /etc/init.d/ | grep -v ".sh"
-# 19. Listez les services qui se lancent automatiquement lorsque la machine boot et indiquez le nom donné à ce type de service
+echo "Listez les services qui se lancent automatiquement "
+echo "lorsque la machine boot et indiquez le nom donné à ce type de service"
+echo
+echo "/etc/init.d/ | grep -v \".sh\""
+echo
+/etc/init.d/ | grep -v ".sh"

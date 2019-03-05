@@ -1,2 +1,15 @@
-on peut utiliser cron qui permet de lancer des scripts a des heures regulieres specifies a l'avance. 
-# 16. Trouvez un service qui permet de lancer des tâches à horaires régulières
+echo "Trouvez un service qui permet de lancer des tâches à horaires régulières"
+echo
+echo "crontab -l"
+echo
+crontab -l
+
+# *     *     *     *     *  Command to be executed
+# -     -     -     -     -
+# |     |     |     |     |
+# |     |     |     |     +----- Day of week (0-7)
+# |     |     |     +------- Month (1 - 12)
+# |     |     +--------- Day of month (1 - 31)
+# |     +----------- Hour (0 - 23)
+# +------------- Min (0 - 59)
+

@@ -1,2 +1,5 @@
+echo "Lancez en background la commande tail -f /var/log/syslog"
+echo
+echo "tail -f /var/log/syslog &"
+echo
 tail -f /var/log/syslog &
-# 14. Lancez en background la commande tail -f /var/log/syslog

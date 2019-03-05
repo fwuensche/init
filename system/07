@@ -1,2 +1,6 @@
+
+echo "Déterminez le PID du service SSHD"
+echo
+echo "cat /var/run/sshd.pid"
+echo
 cat /var/run/sshd.pid
-#Déterminez le PID du service SSHD

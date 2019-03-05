@@ -1,3 +1,5 @@
+echo "Trouvez une commande qui permet, en temps réel, de trouver les processus en cours d’exécution"
+echo
+echo "top"
+echo
 top
-
-# 13. Trouvez une commande qui permet, en temps réel, de trouver les processus en cours d’exécution

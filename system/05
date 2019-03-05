@@ -1,2 +1,8 @@
+
+echo "Donnez une commande qui détermine l’état du service SSH"
+echo
+echo "sudo service ssh status"
+echo
 sudo service ssh status
-# 5. Donnez une commande qui détermine l’état du service SSH
+
+

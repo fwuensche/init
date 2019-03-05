@@ -1,3 +1,6 @@
-~/.ssh/authorized_keys
 
-# 8. Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?
+echo "Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ?"
+echo
+echo "~/.ssh/authorized_keys"
+echo
+cat ~/.ssh/authorized_keys
