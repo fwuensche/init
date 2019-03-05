@@ -1,0 +1,7 @@
+
+echo "a) Indiquez l’adresse de Broadcast"
+ifconfig en0 | awk /broadcast/'{print $6}'
+
+echo
+echo "b) Indiquez toutes les adresses IP qui font partie du même sous-réseau"
+arp -a | awk '{print $2}' | cut -c 2- | rev | cut -c 2- | rev

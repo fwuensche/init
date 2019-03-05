@@ -1,0 +1,6 @@
+
+echo "Quel est le fichier contenant les entrées locales DNS ?"
+echo
+echo "fichier /etc/hosts"
+echo
+cat /etc/hosts

@@ -1,0 +1,4 @@
+
+echo "Récupérez la liste des interfaces réseau de la machine"
+
+ifconfig -l

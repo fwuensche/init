@@ -1,0 +1,6 @@
+
+echo "Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85"
+echo
+echo "On devrait ajouter la ligne suivante au fichier /etc/hosts :"
+echo "46.19.122.85	intra.42.fr"
+echo "mais on n'a pas les droits ¯\_(ツ)_/¯"

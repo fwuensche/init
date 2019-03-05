@@ -1,0 +1,4 @@
+
+echo "Identifiez la gateway par défaut dans la table de routage"
+
+netstat -nr | grep default | awk '{print $2}' | head -1

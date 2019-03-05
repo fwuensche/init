@@ -1,0 +1,4 @@
+
+echo "Trouvez l’IP qui vous a été assignée par le serveur dhcp"
+
+ifconfig en0 | awk '/inet/{ print $2 }' | tail -1
